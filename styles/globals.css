@@ -1,0 +1,25 @@
+:root {
+  --artwork-grid-gap: calc(0.22*30vw);
+  --artwork-container-width: 30vw;
+}
+
+@font-face {
+  font-family: Archivo;
+  src: url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap');
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+  line-height: 1;
+  overscroll-behavior-y: none;
+}
+
+body.menu-is-visible {
+  overflow-y: hidden;
+}
+
+@media(max-width:768px){
+  body {
+    overscroll-behavior-y: initial;
+  }
+}

@@ -1,0 +1,169 @@
+.wholePage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: transform .5s ease-in-out; 
+}
+
+.wholePage img{
+    max-height: 100vh;
+}
+
+.imgHolder{
+    width: 100%;
+    height: 100%;
+}
+
+.closeButton {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #181818;
+    background-color: #181818;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10001;
+    transition: all .3s ease-in-out;
+}
+
+
+.closeButton div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+
+}
+
+.closeButton > div:first-child {
+    transform: translate(-50%, 0) rotate(45deg);
+}
+
+.closeButton > div:last-child {
+    transform: translate(-50%, 0) rotate(-45deg);
+}
+
+.closeButton:hover {
+    background-color: #ffffff;
+}
+
+.closeButton:hover  > div{
+    background-color: #181818;
+}
+
+
+.leftBtn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50vh;
+    left: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #181818;
+    /* color: blue; */
+    background-color: #181818;
+
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10001;
+    transition: all .3s ease-in-out;
+    opacity: 75%;
+    
+}
+
+.leftBtn div {
+
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+    margin-left: 5px;
+    transition: all .3s ease-in-out;
+
+}
+
+.leftBtn:hover{
+    opacity: 1;
+    background-color: white;
+}
+
+.leftBtn:hover div{
+    border-top: solid #181818 2px;
+    border-left: solid #181818 2px;
+
+}
+
+
+.rightBtn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50vh;
+    right: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #181818;
+    background-color: #181818;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10001;
+    transition: all .3s ease-in-out;
+    opacity: 75%;
+
+}
+
+.rightBtn div {
+    width: 10px;
+    height: 10px;
+    transform: rotate(135deg);
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+    margin-left: -5px;
+    transition: all .3s ease-in-out;
+
+}
+
+.rightBtn:hover{
+    opacity: 1;
+    background-color: white;
+}
+
+.rightBtn:hover div{
+    border-top: solid #181818 2px;
+    border-left: solid #181818 2px;
+
+}
+
+.videoPlayer{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}

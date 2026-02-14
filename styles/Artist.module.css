@@ -1,0 +1,171 @@
+.artistPage {
+  overflow-x: hidden;
+}
+
+.artistContainer {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+.headerWrapper {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+.heroSection {
+  position: relative;
+  width: 100%;
+  top: 93px;
+  height: auto;
+  z-index: 10;
+  margin: 0px;
+  padding-top: 1vw;
+  margin-bottom: 30px;
+}
+.pageTitle {
+  text-transform: uppercase;
+}
+.artistName {
+  font-weight: 700;
+  font-size: 5vw;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.artistDesc {
+  margin-top: 2vw;
+  max-width: 69vw;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 180%;
+}
+
+.artStudio {
+  text-transform: capitalize;
+  opacity: 0.5;
+  color: #181818;
+  font-weight: 600;
+  font-size: 1.5vw;
+  line-height: 150%;
+}
+
+.artStudio span {
+  text-transform: capitalize;
+}
+
+.artistNameHolder {
+  display: flex;
+  align-items: center;
+}
+
+.artistNameHolder h1 {
+  display: inline;
+  margin-right: 30px;
+}
+
+.award {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftLeaf {
+  display: inline-block;
+}
+
+.awardName {
+  display: inline-block;
+  font-family: 'utile-display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5vw;
+  line-height: 140%;
+  max-width: 15vw;
+  text-transform: uppercase;
+}
+
+.rightLeaf {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+.igHolder {
+  display: inline-block;
+}
+
+.websites {
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.websites a {
+  margin: 20px;
+  margin-left: 0px;
+}
+
+@media (max-width: 1024px) {
+  .heroSection {
+    margin-bottom: 100px;
+    height: auto;
+  }
+
+  .artistDesc {
+    display: flex;
+    height: 100%;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 180%;
+  }
+
+  .websites {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    margin-bottom: 100px;
+    height: auto;
+  }
+
+  .artistName {
+    font-size: 10vw;
+  }
+
+  .artStudio {
+    font-size: 4vw;
+  }
+
+  .artistDesc {
+    display: flex;
+    height: 100%;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 180%;
+    max-width: 95%;
+  }
+
+  .artistNameHolder h1 {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .artistNameHolder {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .award {
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .awardName {
+    font-size: 3vw;
+    max-width: 200px;
+  }
+}

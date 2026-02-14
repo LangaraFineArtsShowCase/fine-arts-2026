@@ -1,0 +1,413 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  
+}
+
+.headerContainer {
+  padding: 22px 16px;
+  transition: all .5s ease-in-out; 
+
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.headerTitle a {
+  color: #181818;
+  text-decoration: none;
+  
+}
+
+.headerTitle span {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.burgerMenu {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: #181818;
+  border-radius: 50%;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.burgerMenu > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 2px;
+  background-color: white;
+  transition: all .3s ease-in-out;
+}
+
+.burgerMenu > div:first-child {
+  transform: translate(-50%, -8px) rotate(0deg);
+}
+
+.burgerMenu > div:nth-child(2) {
+  width: 11px;
+  transform: translate(-20%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.burgerMenu > div:last-child {
+  transform: translate(-50%, 6px) rotate(0deg);
+}
+
+.burgerMenuOpen {
+  background-color: white;
+}
+
+.burgerMenuOpen > div {
+  background-color: #181818;
+}
+
+.burgerMenuOpen > div:first-child {
+  transform: translate(-50%, 0) rotate(45deg);
+}
+
+.burgerMenuOpen > div:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerMenuOpen > div:last-child {
+  transform: translate(-50%, 0) rotate(-45deg);
+}
+
+.burgerMenuLinksOpen {
+  background-color: #181818;
+}
+
+.burgerMenuLinksOpen > div {
+  background-color: white;
+}
+
+.menuContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(100vw);
+  width: 100vw;
+  height: 100vh;
+  background: #181818;
+  padding: 12vh 0;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: transform .35s ease-in,
+              opacity .25s ease-in-out;
+}
+
+.menuContainerOpen {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menuContainer .nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.menuContainer .navColumn {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  color: white;
+  opacity: 1;
+  transform: translate(0vw, 0px);
+  transition: all .35s ease-in-out,
+              color 0s ease-in-out;
+}
+
+.navColumn h3 {
+  flex: 1;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.navColumn h3 a {
+  color: white;
+  text-decoration: none;
+}
+
+.navColumn span {
+  font-size: 140px;
+  font-weight: 900;
+  transform: translateX(50%);
+  transition: all .3s ease-in-out;
+}
+
+.menuLinks {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 100px;
+  right: 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+  padding: 0;
+  background-color: white;
+  overflow-y: auto;
+  box-sizing: border-box;
+  transform: translateY(100vh);
+  transition: all .35s ease-in-out;
+}
+
+.menuLinksOpen {
+  transform: translateY(0vh);
+}
+
+.artistList {
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.artistName {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+}
+
+.artistName:last-child {
+  padding-bottom: 72px;
+}
+
+.initial {
+  width: 3rem;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.artistName a {
+  display: inline-block;
+  text-decoration: none;
+  color: #181818;
+  border-bottom: 1px solid transparent;
+}
+
+.artistName a:hover {
+  border-bottom: 1px solid #181818;
+}
+
+.StudiosList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 100px 24px;
+  height: 100%;
+}
+
+.StudiosList > div:nth-child(2n+2) {
+  transform: translateY(30px);
+}
+
+.StudiosList > div:last-child {
+  padding-bottom: 72px;
+}
+
+.StudiosList img {
+  max-width: 100%;
+  height: auto;
+}
+
+.StudiosList h4 {
+  margin-top: 1rem;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.StudiosList a {
+  color: #181818;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navColumn.hideArtistsMenu {
+  opacity: 0;
+  transform: translateX(-34vw);
+}
+
+.navColumn.hideStudiosMenu {
+  opacity: 0;
+  transform: translateX(67vw);
+}
+
+.navColumn.hideAboutMenu {
+  opacity: 0;
+  transform: translateX(34vw);
+}
+
+.navColumn.slideArtistsMenu,
+.navColumn.slideStudiosMenu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 102px;
+  background-color: white;
+  color: #181818;
+}
+
+.navColumn.slideArtistsMenu span,
+.navColumn.navColumn.slideStudiosMenu span {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .headerContainer {
+    padding: 22px 40px;
+  }
+
+  .menuContainer {
+    padding: 120px 1rem;
+    transition: transform .45s ease-in,
+    opacity .35s ease-in-out;
+  }
+
+  .menuContainer .nav {
+    flex-direction: row;
+  }
+
+  .menuContainer .navColumn {
+    flex-direction: column;
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    transition: all .5s ease-in-out;
+  }
+
+  .menuContainer .navColumn:first-child {
+    border-left: none;
+  }
+
+  .navColumn h3 {
+    flex: 0;
+    margin-top: 4rem;
+    font-size: 4rem;
+  }
+
+  .navColumn span {
+    position: absolute;
+    bottom: -170px;
+    font-size: 200px;
+    transform: translateX(0);
+  }
+
+  .navColumn h3:hover + span,
+  .menuLinksVisible span {
+    bottom: -100px;
+  }
+
+  .navColumn.hideArtistsMenu {
+    opacity: 0;
+    transform: translateX(-34vw);
+  }
+
+  .navColumn.hideStudiosMenu {
+    opacity: 0;
+    transform: translateX(67vw);
+  }
+
+  .navColumn.hideAboutMenu {
+    opacity: 0;
+    transform: translateX(34vw);
+  }
+
+  .navColumn.slideArtistsMenu,
+  .navColumn.slideStudiosMenu {
+    position: unset;
+    width: unset;
+    height: unset;
+    background-color: transparent;
+    color: white;
+  }
+
+  .navColumn.slideStudiosMenu {
+    transform: translateX(-34vw);
+  }
+
+  .navColumn.slideArtistsMenu span,
+  .navColumn.navColumn.slideStudiosMenu span {
+    display: inline;
+  }
+
+  .menuLinks {
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 67%;
+    height: 100vh;
+    padding: 100px 24px;
+    box-sizing: border-box;
+    transform: translateX(67vw);
+    transition: all .5s ease-in-out;
+  }
+
+  .menuLinksOpen {
+    transform: translateX(0vw);
+  }
+
+  .artistList {
+    margin-top: 0;
+    padding: 0 24px;
+    column-count: 2;
+    width: 100%;
+    height: auto;
+  }
+
+  .artistName:last-child {
+    padding-bottom: 0;
+  }
+
+  .StudiosList {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 24px 0 0;
+  }
+  
+  .StudiosList > div:nth-child(2n+2) {
+    transform: translateY(0);
+  }
+
+  .StudiosList > div:nth-child(2),
+  .StudiosList > div:nth-child(5),
+  .StudiosList > div:nth-child(8),
+  .StudiosList > div:nth-child(11) {
+    transform: translateY(40px);
+  }
+
+  .StudiosList > div:last-child {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .artistList {
+    column-count: 3;
+  }
+
+  .artistName {
+    margin-bottom: 2rem;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,334 @@
+.main {
+  margin-top: 92px;
+}
+
+.section {
+  padding: 30px 14px;
+  color: #181818;
+  line-height: 28px;
+}
+
+.section.bgGray {
+  background-color: #f5f5f5;
+}
+
+.section h2 {
+  margin: 0;
+}
+
+.wrapper {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.pageTitle {
+  color: #000;
+  font-size: 58px;
+  line-height: 64px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pageSubtitle {
+  color: #000;
+  margin: 0;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pageSubtitle small {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.videoWrapper {
+  margin: 40px auto;
+  width: 100%;
+  max-width: 363px;
+  border-radius: 50% 50% 0 0;
+  overflow: hidden;
+}
+
+.byline {
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+.carousel {
+  margin-bottom: 40px;
+}
+
+.carouselItemWrapper {
+  position: relative;
+  padding-top: 75%;
+}
+
+.carousel img {
+  object-fit: cover;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.personPortrait * {
+  position: relative;
+}
+
+.personPortrait h2 {
+  padding: 0 12px;
+  color: #000;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 46px;
+  z-index: 1;
+}
+
+.personPortrait span {
+  display: block;
+  padding: 0 12px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: lowercase;
+  z-index: 1;
+}
+
+.personPortrait img {
+  margin-top: -48px;
+  max-width: 100%;
+  height: auto;
+}
+
+.letterSignature {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.letterSignature p {
+  margin: 0;
+}
+
+.portraitJoanne .personPortrait img {
+  margin-top: 0;
+  border-radius: 5px;
+}
+
+.portraitJoanne h2 {
+  margin: 2rem 0;
+}
+
+.personPortrait .langaraFineArtsImage {
+  margin-top: -20px;
+  border-radius: 5px;
+}
+
+.facultyListSection {
+  font-size: 18px;
+  text-align: center;
+}
+
+.facultyList {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  padding-left: 0;
+}
+
+.facultyList li {
+  margin: 15px 0;
+}
+
+.facultyList strong::before {
+  content: '•';
+  margin-right: 8px;
+}
+
+.facultyList li span {
+  display: block;
+  font-size: 16px;
+}
+
+.thankYouTitle h2 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.thankYouList {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.thankYouList li {
+  margin-bottom: 16px;
+}
+
+.thankYouList strong {
+  display: inline-block;
+  margin: 8px 0;
+}
+
+.thankYouList strong::before,
+.thankYouList li:last-child span::before {
+  content: '•';
+  margin-right: 4px;
+}
+
+.thankYouList span {
+  display: block;
+}
+
+.thankYouList li:last-child strong::before {
+  content: '';
+  margin-right: 0;
+}
+
+.langaraApplySection a {
+  color: #000;
+  text-decoration: none;
+}
+
+.langaraApplySection a:hover {
+  text-decoration: underline;
+}
+
+.langaraApplySection .applyOnlineBtn {
+  display: inline-block;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, white 50%, black 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.langaraApplySection .applyOnlineBtn:hover {
+  background-position-x: 0;
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 767px) {
+  .section {
+    margin: 40px auto;
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .section .pageTitle {
+    font-size: 84px;
+    line-height: 91px;
+    text-align: left;
+  }
+
+  .section .pageSubtitle {
+    margin-bottom: 1rem;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: left;
+  }
+
+  .pageSubtitle small {
+    font-size: 1rem;
+    line-height: 17px;
+  }
+
+  .heroSection {
+    max-width: 1280px;
+    box-sizing: border-box;
+  }
+
+  .heroSection .wrapper {
+    display: grid;
+    grid-template-columns: 650px 1fr;
+    align-items: center;
+  }
+
+  .videoWrapper {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    justify-self: end;
+    margin: 1rem 0;
+  }
+
+  .carousel {
+    margin-bottom: 120px;
+  }
+
+  .facultyList {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    margin: 2rem 0 0;
+  }
+
+  .thankYouSection .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .thankYouTitle h2 {
+    margin: 1rem 0;
+  }
+
+  .langaraApplySection .wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .langaraApplySection .personPortrait {
+    grid-row: 1 / 3;
+  }
+
+  .langaraApplySection .applyOnlineContainer {
+    grid-column: 2 / -1;
+  }
+
+  .portraitStephanie .wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 18px;
+  }
+
+  .portraitDarren .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 18px;
+  }
+
+  .portraitJoanne .wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .portraitDarren .personPortrait,
+  .portraitJoanne .personPortrait {
+    order: 3;
+  }
+}

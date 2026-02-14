@@ -1,0 +1,162 @@
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url('/images/home/2025SplashPage.jpg') center right no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.school {
+  font-size: 42px;
+  font-size: 3vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 3px;
+  padding-left: 1.5vw;
+}
+.schoolIndigenousName {
+  font-size: 35px;
+  font-size: 2.5vw;
+  font-weight: 700;
+  text-transform: lowercase;
+  font-style: italic;
+  letter-spacing: 2.5px;
+  padding-left: 1.5vw;
+}
+
+.coming_soon {
+  font-size: 42px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 3px;
+  padding: 1.5vw;
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: right;
+  color: white;
+}
+
+.title {
+  margin-top: -60px;
+  color: white;
+  line-height: 0.9;
+  z-index: 1;
+  text-transform: uppercase;
+}
+.visuallyHidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.splashTextImgWrapper {
+  width: 100%;
+  min-width: 350px;
+  max-width: 90vw;
+  max-height: calc(100vh - 50px);
+}
+.splashTextImg {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  height: auto;
+  scale: 120%;
+}
+.langaraLogoWrapper {
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.langaraLogoWrapper img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  height: auto;
+  max-width: 350px;
+}
+.buttonWrapper {
+  position: absolute;
+  bottom: 45px;
+  right: 40px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+}
+
+.buttonWrapper a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, white 50%, black 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.buttonWrapper a:hover {
+  background-position-x: 0;
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  .buttonWrapper {
+    left: 0;
+    right: 0;
+  }
+  .buttonWrapper a {
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+  .langaraLogoWrapper img {
+    margin: 0 auto;
+    min-width: 50vw;
+  }
+  .coming_soon {
+    text-align: center;
+    font-size: 3.2rem;
+    bottom: 15vh;
+  }
+  .splashTextImg {
+    position: relative;
+    top: -10vh;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .splashTextImgWrapper {
+    max-width: 75vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .langaraLogoWrapper img {
+    max-width: 25vw;
+  }
+  .coming_soon {
+    text-align: right;
+    font-size: 3vw;
+    bottom: 0;
+  }
+}

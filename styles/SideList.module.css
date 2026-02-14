@@ -1,0 +1,63 @@
+.sideMenu{
+
+    text-align: right;
+    /* max-width: calc; */
+    /* position: sticky;
+    top:25px; */
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky; 
+
+}
+
+.sideMenu ul{
+    list-style: none;
+    padding-left: 0;
+    /* display: block; */
+}
+
+.sideMenu h2{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(0.07*var(--artwork-container-width));
+    line-height: 150%;
+    cursor: auto;
+}
+
+.sideMenu li{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.05*var(--artwork-container-width));
+    line-height: 180%;
+    margin-bottom: calc(0.04*var(--artwork-container-width));
+    /* max-width: 12vw;
+    position: relative; */
+    /* cursor: pointer; */
+}
+
+.sideMenu li div a{
+    display: inline-block;
+    /* background-color: red; */
+    
+    color: black;
+    text-decoration: none;
+    
+    cursor: pointer;
+  transition: all .5s ease-in-out; 
+
+}
+
+
+.sideMenu li div a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .sideMenu li{
+        margin-bottom: calc(0.08*var(--artwork-container-width));
+        font-size: calc(0.07*var(--artwork-container-width));
+    }
+}

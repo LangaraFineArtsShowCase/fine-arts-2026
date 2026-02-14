@@ -1,0 +1,46 @@
+/* styles.module.css */
+.headerWrapper {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+.heroSection {
+  position: relative;
+  width: 100vw;
+  height: calc(0.41 * 100vw);
+  background-color: black;
+  z-index: 999;
+}
+
+.heroSection h1 {
+  position: absolute;
+  bottom: calc(41vh * 0.06);
+  left: calc(100vw * 0.04);
+  /* font-family: 'Archivo'; */
+  /* font-family: 'Archivo', sans-serif; */
+  font-family: 'Archivo', sans-serif;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: calc(0.08 * 100vw);
+  line-height: 120%;
+  color: white;
+}
+
+.artistsHeader {
+  /* position: sticky; */
+  font-size: 1.75vw;
+
+  /* mix-blend-mode: difference; */
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: calc(1.05 * 100vw);
+  }
+
+  .heroSection h1 {
+    font-size: calc(0.16 * 100vw);
+    font-weight: 700;
+  }
+}
