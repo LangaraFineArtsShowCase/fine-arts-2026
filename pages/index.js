@@ -15,7 +15,7 @@ const Home = ({ artistList, showComingSoon }) => {
   return (
     <>
       <Head>
-        <title>Langara snəw̓eyəɬ leləm̓ Fine Arts Grad Show 2025</title>
+        <title>Langara snəw̓eyəɬ leləm̓ Fine Arts Grad Show 2026</title>
       </Head>
       <Header
         artistList={artistList}
@@ -32,7 +32,7 @@ const Home = ({ artistList, showComingSoon }) => {
               className={styles.splashTextImg}
             />
           </div>
-          <h1 className={styles.visuallyHidden}>Fine Arts Grad Show 2025</h1>
+          <h1 className={styles.visuallyHidden}>Fine Arts Grad Show 2026</h1>
         </div>
         {showComingSoon && (
           <span className={styles.coming_soon}>Coming Soon!</span>

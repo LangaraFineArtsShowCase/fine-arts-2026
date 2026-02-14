@@ -95,7 +95,7 @@ const Header = ({ artistList, originPage, bgColor }) => {
                 style={{ color: originPage == 'about' ? '#181818' : '#ffffff' }}
               >
                 <span>Langara Fine Arts</span>
-                <span>Grad Show 2025</span>
+                <span>Grad Show 2026</span>
               </Link>
             </div>
           )}
