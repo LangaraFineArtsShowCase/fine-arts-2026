@@ -16,7 +16,7 @@ const About = ({ artistList }) => {
   return (
     <>
       <Head>
-        <title>About - Langara Fine Arts Grad Show 2025</title>
+        <title>About - Langara Fine Arts Grad Show 2026</title>
       </Head>
       <Header artistList={artistList} originPage="about" />
       <main className={styles.main}>
@@ -24,7 +24,7 @@ const About = ({ artistList }) => {
           <div className={styles.wrapper}>
             <h1 className={styles.pageTitle}>Fine Arts</h1>
             <h2 className={styles.pageSubtitle}>
-              Grad Show <small>2025</small>
+              Grad Show <small>2026</small>
             </h2>
             <div className={styles.videoWrapper}>
               <ReactPlayer
@@ -40,8 +40,8 @@ const About = ({ artistList }) => {
             </div>
             <div>
               <p>
-                We gratefully acknowledge that our learning takes place on
-                traditional, ancestral and unceded{' '}
+                Langara Fine Arts gratefully acknowledges that our teaching, learning and making takes place upon
+                ancestral, present-day, unceded{' '}
                 <strong> xʷməθkʷəy̓əm, Musqueam</strong> territory. We are deeply
                 honoured to hold our given Musqueam name,{' '}
                 <strong>snəw̓eyəɬ leləm̓,</strong> house of teachings.
@@ -49,20 +49,20 @@ const About = ({ artistList }) => {
               <p>
                 <strong>
                   Welcome to the Langara Fine Arts virtual graduation showcase
-                  for 2025!
+                  for 2026!
                 </strong>
               </p>
               <p>
-                This digital presentation of artworks complements our on-campus
-                exhibition held at Langara College on West 49th Avenue in
-                Vancouver from April 25<sup>th</sup> — May 4<sup>th</sup>, 2025.
+                This website complements our on-campus
+                exhibition held at Langara College from April 30<sup>th</sup> — May 10<sup>th</sup>, 2026.
                 The artworks featured on this site show a wide range of artistic
-                approaches that graduating students have taken in their
-                ceramics, drawing, design, Indigenous carving & tool making,
-                painting, performance, print media, public art, media, textile
-                and sculpture courses. We are extremely proud of the dedication,
-                curiosity and experimentation of these emerging artists and
-                congratulate them on their significant achievement.
+                approaches that graduating students have experimented with during their
+                time in the Fine Arts Program (ex: Ceramics, Drawing, Design,
+                Indigenous Carving & Tool making, Painting, Performance,
+                Printmaking, Public Art, Media, Textiles and Sculpture).
+                We are extremely proud of the dedication, curiosity and
+                experimentation of these emerging artists and congratulate
+                them on their significant achievement.
               </p>
               <p className={styles.byline}>
                 If you wish to inquire about purchasing any of these featured
@@ -98,8 +98,8 @@ const About = ({ artistList }) => {
             <div
               className={`${styles.personPortrait} ${styles.textAlignRight}`}
             >
-              <h2>Milos Campbell </h2>
-              <span>- Department Chair, Fine Arts</span>
+              <h2>Aurora Landin (She/They) </h2>
+              <span style={{ textTransform: "none" }}>- Department Chair, Fine Arts</span>
               <Image
                 src={`${imageBasePath}/images/about/milos-campbell.jpg`}
                 alt="Milos Campbell "
@@ -110,28 +110,15 @@ const About = ({ artistList }) => {
             </div>
             <div>
               <p>
-                On behalf of the Langara Fine Arts faculty and staff, I would
-                like to acknowledge and celebrate the talent and commitment of
-                students participating in the 2025 Graduation Exhibition, and
-                accompanying website.
+                On behalf of the Langara Fine Arts faculty and staff, I would like to celebrate the talent, commitment and accomplishments of students participating in the 2026 Graduation Exhibition and accompanying website.
               </p>
               <p>
-                Congratulations to you, the graduates! You stuck with a program
-                that required many long days and sleepless nights. You fought
-                through the trials and tribulations of mastering various new and
-                difficult media. During this process you developed your ideas
-                and imagery, defining your artistic voice. These years of hard
-                work and dedication have brought you one step closer to your
-                future goals.
+                We congratulate you, the Graduates! You've successfully navigated an intense period of hands-on discovery, of growing capabilities and material understanding, and of forging lasting connections with each other and with the Fine Arts Program. It has taken enormous dedication, passion and curiosity to complete this leg of your journey, with many long days and sleepless nights along the way.
               </p>
             </div>
             <div>
               <p>
-                In this time of celebration, be thankful for the support of
-                friends and family. Those connections made here and at home,
-                along with the new skills you developed, will carry you through
-                a lifetime. We wish you all the best as you continue your
-                journey to new heights!
+                We are so thrilled to celebrate this achievement with all of these Graduates, and to acknowledge with gratitude the enormous support of their families and friends, who have helped get them to this point. The connections made here and in the broader community, along with the new skills you have gained, will carry you through a lifetime. We wish you all the best as you continue your journey to new heights!
               </p>
             </div>
           </div>
@@ -157,7 +144,7 @@ const About = ({ artistList }) => {
               </li>
               <li>
                 <strong>Scott Kemp</strong>
-                <span>- sculpture</span>
+                <span>- sculpture, professional practice</span>
               </li>
               <li>
                 <strong>Aaron Nelson Moody</strong>
@@ -165,15 +152,11 @@ const About = ({ artistList }) => {
               </li>
               <li>
                 <strong>Natalie Purschwitz</strong>
-                <span>- sculpture, drawing</span>
+                <span>- sculpture, drawing, textile studio</span>
               </li>
               <li>
                 <strong>Alwyn O’Brien</strong>
                 <span>- ceramics</span>
-              </li>
-              <li>
-                <strong>Philip Robbins</strong>
-                <span>- design</span>
               </li>
               <li>
                 <strong>Pat Vera</strong>
@@ -196,21 +179,19 @@ const About = ({ artistList }) => {
                 <span>- Studio Coordinator</span>
               </li>
               <li>
-                <strong>Milos Campbell</strong>
-                <span>- Department Chair, printmaking, drawing </span>
-              </li>
-              <li>
                 <strong>Aurora Landin</strong>
                 <span>
-                  - Assistant Department Chair, printmaking, drawing and
-                  professional practice
+                  - Department Chair, printmaking, drawing, professional practice
                 </span>
+              </li>
+              <li>
+                <strong>Milos Campbell</strong>
+                <span>- Assistant Department Chair, printmaking, drawing </span>
               </li>
               <li>
                 <strong>Elizabeth Milton</strong>
                 <span>
-                  - Assistant Department Chair, performance, media, drawing and
-                  professional practice
+                  - Graduation Exhibition Coordinator, performance, media studio, drawing and professional practice
                 </span>
               </li>
             </ul>
@@ -222,8 +203,8 @@ const About = ({ artistList }) => {
         >
           <div className={styles.wrapper}>
             <div className={styles.personPortrait}>
-              <h2>Darren Bernaerdt</h2>
-              <span>- Dean of Arts</span>
+              <h2>David N. Wright, PhD (He/Him) </h2>
+              <span style={{ textTransform: "none" }}>- Interim Dean, Faculty of Arts </span>
               <Image
                 src={`${imageBasePath}/images/about/darren-bernaerdt.jpg`}
                 alt="darren bernaerdt"
@@ -234,37 +215,18 @@ const About = ({ artistList }) => {
             </div>
             <div>
               <p>
-                On behalf of the Faculty of Arts, I am pleased to
-                offer congratulations on your graduation from the Fine Arts
-                program at Langara College. This is a significant academic
-                milestone and stage in your development as an artist. This
-                represents the culmination of your dedication, creativity, hard
-                work, and vision. Seeing the range of artistic expression in the
-                Grad Show is a highlight each year and this year’s show is no
-                exception.
+                On behalf of the Faculty of Arts, it is my distinct pleasure to extend congratulations on your graduation from the Fine Arts program at Langara College. This moment marks not only the completion of a course of study, but a moment of artistic accomplishment and anticipation for what the future might hold. The Grad Show is a highlight of the year where we see the results of sustained discipline, aesthetic risk, and intellectual resolve begin to announce themselves as a mature artistic practice.
               </p>
               <p>
-                During your time in the Fine Arts program, the faculty and staff
-                have been instrumental in supporting you. Their commitment is
-                critical to creating the supportive community that thrives in
-                the department. The quality of your work is testament to the
-                exceptional education and mentorship that you have received.
+                Throughout your time in the Fine Arts program, faculty and staff have played an essential role in cultivating the culture of exploration and curiosity that informs so much of artistic practice. That the Grad Show so elegantly reflects a heterogeneous community is a testament to the commitment everyone makes in affirming the essential role of artistic representation in a turbulent world.
               </p>
             </div>
             <div>
               <p>
-                As you embark on the next chapter of your journey as an artist,
-                I encourage you to continue the same dedication to your
-                creativity and curiousity that has characterized your time in
-                the Fine Arts program. Jump into the challenges and
-                opportunities ahead with the same enthusiasm that you brought to
-                your studies here at Langara College. Your skills and vision
-                will make an impact on the world.
+                As you move into the next chapter of your life as an artist, I encourage you to maintain a sense of adventure and experimentation. Carry forward the curiosity, discipline, and willingness to unsettle received assumptions that you've been given space to explore here. Embrace the demands of persistence and inspiration by working through the sustained engagement that yields meaningful artistic interventions into, and unique ways of representing, the spaces you occupy.
               </p>
               <p>
-                Congratulations once again on your achievements and I look
-                forward to hearing about your future successes and extraordinary
-                contributions.
+                Congratulations once again on your accomplishments. May the path forward see you as a thoughtful and provocative witness to the broader cultural conversation. I'll be cheering you on.
               </p>
             </div>
           </div>
@@ -277,63 +239,64 @@ const About = ({ artistList }) => {
             </div>
             <div>
               <p>
-                Thank you to our Department leadership team for their
-                dedication, insight and hard work running our program:{' '}
-                <strong>Milos Campbell</strong> (Department Chair),{' '}
-                <strong>Aurora Landin</strong> (Assistant Department Chair),{' '}
-                <strong>Elizabeth Milton</strong> (Assistant Department Chair)
+                Thank you to our Department Leadership Team for their
+                dedication, care and hard work running our program:{' '}
+                <strong>Aurora Landin</strong> (Department Chair),{' '}
+                <strong>Milos Campbell</strong> (Assistant Department Chair),{' '}
+                <strong>Elizabeth Milton</strong> (Graduation Exhibition Coordinator)
                 and <strong>Rita Yip</strong> (Studio Coordinator). Deep
-                gratitude to our donors: 
-                <strong>David Lambert Foundation</strong>, 
+                gratitude to our donors:{' '}
+                <strong>Bob Graham & Laura Cullen</strong>,{' '}
+                <strong>David Lambert Foundation</strong>,{' '}
                 <strong>Anne and Jeff Powell</strong>,{' '}
                 <strong>Craft Council of BC</strong>,{' '}
                 <strong>Shadbolt Centre for the Arts</strong> (Ceramics
                 Program), <strong>North-West Ceramics Foundation</strong>
-                , <strong>Tenline Sales</strong>,{' '}
+                , <strong>Tenline Sales</strong>,{' '}
                 <strong>Dudarave Print Workshop</strong> and{' '}
-                <strong>Malaspina Printmakers</strong> for their generous
+                <strong>Malaspina Printmakers</strong> for their generous
                 contribution to our Fine Arts Awards program.
               </p>
               <p>
-                The following people are responsible for creating this website: 
-                <strong>Elizabeth Milton</strong> (Assistant Department Chair),
-                <strong>Tomoko Okochi</strong>, <strong>Amandeep Singh</strong>{' '}
-                (Web & Mobile App Instructors). <strong>Vinicius Souza </strong>{' '}
-                (Web & Mobile App Student, Developer). Thank you, team!
+                Thank you to those that made this website possible:{' '}
+                <strong>Elizabeth Milton</strong> (Graduation Exhibition Coordinator);{' '}
+                <strong>Tomoko Okochi</strong>, <strong>Binazir Farokhi</strong>{' '}
+                (WMDD Instructors) and <strong>Yahui Xu</strong>{' '}
+                (WMDD Student, Developer). We are deeply grateful for our
+                partnership with the Web and Mobile App Development and Design
+                Program over the years. Thank you, team!
               </p>
               <p>
-                Splash Page Image: Serigraphy Detail, Martha
+                Splash Page Image: 
                 <br />
-                Image Layout: Leann Juatco
+                Image Layout: 
                 <br />
-                Photos by Claire Thomas, Maria Gazzola and Shradha Chonkar
+                Photos by Sam Leung and Shradha Chonkar
               </p>
             </div>
 
             <div>
               <p>
-                Huge thanks and congratulations to our Fine Arts Graduates for
-                providing such strong work to fill this virtual space.
+                Huge thanks to our incredible students for filling this site with their dynamic artwork!
               </p>
               <p>Many thanks to the following folks who support our program:</p>
               <ul className={styles.thankYouList}>
                 <li>
-                  <strong>Darren Bernaerdt</strong>
-                  <span>- Dean of Arts</span>
+                  <strong>Rebecca Slaven & Suzanne Cowan</strong>
+                  <span>- Fine Arts Librarians</span>
                 </li>
                 <li>
                   <strong>Spencer Dane</strong>
-                  <span>- Creative Arts and Industries Division Chair</span>
+                  <span>- Division Chair, Creative Arts and Industries</span>
                 </li>
                 <li>
-                  <strong>Rebecca Slaven</strong>
-                  <span>- Fine Arts Librarian</span>
+                  <strong>David Wright</strong>
+                  <span>- Interim Dean, Faculty of Arts</span>
                 </li>
                 <li>
                   <span>Our amazing life models:</span>
                   <strong>
-                    - Guy, Steve, Hélène, Jessica, Bruce, Emmalena, Ann,
-                    Tiffany, Mark
+                    - Guy, Steve, Hélène, Jessica, Bruce, Emmalena, Tiffany, Mark
                   </strong>
                 </li>
               </ul>

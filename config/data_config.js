@@ -23,7 +23,7 @@ export const studioArray = [
     studioSlug: 'design',
     studioDescription:
       'Foundation Design courses allow for the development of core design skills that include: observation, analysis, research, planning, design conceptualization, detail development and communication. Advanced courses enable students to further synthesize their skills while approaching a range of industrial design questions. Our design studios aim to broaden the application of creative skills to an expanded field by exploring the wider implications making has on the world around us. Through a sophisticated range of digital competencies, methods and materials, and transferable skills, we investigate how what we think and what we make can drive positive change. ',
-    studioFaculty: ['Pat Vera', 'Philip Robbins'],
+    studioFaculty: ['Pat Vera'],
     studioImage: [
       `${imageBasePath}/images/studios/Design1-min.jpg`,
       `${imageBasePath}/images/studios/Design1.jpg`,
@@ -190,7 +190,7 @@ export const studioArray = [
     studioSlug: 'textiles',
     studioDescription:
       'In our Textile Studio class students are introduced to the use of textile-based materials and the basic techniques associated with them. Students produce two and three-dimensional artwork while gaining an understanding of contemporary textile work. Areas of enquiry include both traditional processes and non-traditional applications, contextualized through an understanding of historical and contemporary approaches. Needle-based skills such as sewing, knitting, crochet and quilting are covered in the course along with other textile processes.',
-    studioFaculty: ['Helena Wadsley'],
+    studioFaculty: ['Helena Wadsley', 'Natalie Purschwitz'],
     studioImage: [
       `${imageBasePath}/images/studios/Textiles1-min.jpg`,
       `${imageBasePath}/images/studios/Textiles1.jpg`,
