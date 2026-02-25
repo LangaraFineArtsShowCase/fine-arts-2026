@@ -98,7 +98,7 @@ const About = ({ artistList }) => {
             <div
               className={`${styles.personPortrait} ${styles.textAlignRight}`}
             >
-              <h2>Aurora Landin (She/They) </h2>
+              <h2>Aurora Landin<br/>(She/They) </h2>
               <span style={{ textTransform: "none" }}>- Department Chair, Fine Arts</span>
               <Image
                 src={`${imageBasePath}/images/about/milos-campbell.jpg`}
@@ -203,7 +203,7 @@ const About = ({ artistList }) => {
         >
           <div className={styles.wrapper}>
             <div className={styles.personPortrait}>
-              <h2>David N. Wright, PhD (He/Him) </h2>
+              <h2>David N. Wright <br/>PhD (He/Him) </h2>
               <span style={{ textTransform: "none" }}>- Interim Dean, Faculty of Arts </span>
               <Image
                 src={`${imageBasePath}/images/about/darren-bernaerdt.jpg`}
@@ -235,7 +235,7 @@ const About = ({ artistList }) => {
         <section className={`${styles.section} ${styles.thankYouSection}`}>
           <div className={styles.wrapper}>
             <div className={styles.thankYouTitle}>
-              <h2>Thank Yous:</h2>
+              <h2>Thank You</h2>
             </div>
             <div>
               <p>
