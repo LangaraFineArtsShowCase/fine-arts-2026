@@ -113,7 +113,7 @@ const About = ({ artistList }) => {
                 On behalf of the Langara Fine Arts faculty and staff, I would like to celebrate the talent, commitment and accomplishments of students participating in the 2026 Graduation Exhibition and accompanying website.
               </p>
               <p>
-                We congratulate you, the Graduates! You've successfully navigated an intense period of hands-on discovery, of growing capabilities and material understanding, and of forging lasting connections with each other and with the Fine Arts Program. It has taken enormous dedication, passion and curiosity to complete this leg of your journey, with many long days and sleepless nights along the way.
+                We congratulate you, the Graduates! You‘ve successfully navigated an intense period of hands-on discovery, of growing capabilities and material understanding, and of forging lasting connections with each other and with the Fine Arts Program. It has taken enormous dedication, passion and curiosity to complete this leg of your journey, with many long days and sleepless nights along the way.
               </p>
             </div>
             <div>
@@ -223,10 +223,10 @@ const About = ({ artistList }) => {
             </div>
             <div>
               <p>
-                As you move into the next chapter of your life as an artist, I encourage you to maintain a sense of adventure and experimentation. Carry forward the curiosity, discipline, and willingness to unsettle received assumptions that you've been given space to explore here. Embrace the demands of persistence and inspiration by working through the sustained engagement that yields meaningful artistic interventions into, and unique ways of representing, the spaces you occupy.
+                As you move into the next chapter of your life as an artist, I encourage you to maintain a sense of adventure and experimentation. Carry forward the curiosity, discipline, and willingness to unsettle received assumptions that you‘ve been given space to explore here. Embrace the demands of persistence and inspiration by working through the sustained engagement that yields meaningful artistic interventions into, and unique ways of representing, the spaces you occupy.
               </p>
               <p>
-                Congratulations once again on your accomplishments. May the path forward see you as a thoughtful and provocative witness to the broader cultural conversation. I'll be cheering you on.
+                Congratulations once again on your accomplishments. May the path forward see you as a thoughtful and provocative witness to the broader cultural conversation. I’ll be cheering you on.
               </p>
             </div>
           </div>
