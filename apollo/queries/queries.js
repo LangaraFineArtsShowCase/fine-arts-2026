@@ -2,7 +2,7 @@ import { gql } from '@apollo/client'
 
 export const GET_ARTIST_LIST = gql`
   query MyQuery {
-    artists2025(first: 40, where: { status: PUBLISH }) {
+    artists2026(first: 40, where: { status: PUBLISH }) {
       nodes {
         artistFields {
           artistName
@@ -20,7 +20,7 @@ export const GET_ARTIST_LIST = gql`
 //where: {orderby: {majorWork: true}} >> Artwork which is ticked in Major Work field
 export const GET_ARTISTS_MAJOR = gql`
   query MyQuery {
-    artworks2025(where: { majorWork: true, status: PUBLISH }, first: 40) {
+    artworks2026(where: { majorWork: true, status: PUBLISH }, first: 40) {
       nodes {
         artworkFields {
           artworkTitle
@@ -38,7 +38,7 @@ export const GET_ARTISTS_MAJOR = gql`
         author {
           node {
             userId
-            artists2025 {
+            artists2026 {
               nodes {
                 artistFields {
                   artistName
@@ -54,7 +54,7 @@ export const GET_ARTISTS_MAJOR = gql`
 
 export const GET_ARTIST = gql`
   query MyQuery($userId: Int) {
-    artists2025(where: { author: $userId }, first: 30) {
+    artists2026(where: { author: $userId }, first: 30) {
       nodes {
         artistFields {
           artistName
@@ -66,7 +66,7 @@ export const GET_ARTIST = gql`
         author {
           node {
             userId
-            artworks2025 {
+            artworks2026 {
               nodes {
                 artworkFields {
                   artType
@@ -108,7 +108,7 @@ export const GET_ARTIST = gql`
 
 export const GET_STUDIO_WORKS = gql`
   query MyQuery($studio: String) {
-    artworks2025(where: { studio: $studio }, first: 100) {
+    artworks2026(where: { studio: $studio }, first: 100) {
       nodes {
         artworkFields {
           artworkTitle
@@ -141,7 +141,7 @@ export const GET_STUDIO_WORKS = gql`
         author {
           node {
             userId
-            artists2025 {
+            artists2026 {
               nodes {
                 artistFields {
                   artistName

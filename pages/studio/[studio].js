@@ -32,17 +32,21 @@ const Studio = ({ artistList, customArtworks }) => {
   const [headerOrigin, setHeaderOrigin] = useState('studio')
 
   const router = useRouter()
-  let { studio } = router.query
+
+  const rawStudio = router.query.studio
+  const decodedStudio = rawStudio ? decodeURIComponent(rawStudio).toLowerCase() : ''
 
   const items = useMemo(
     () => [
-      ...(studioWork?.data?.artworks2025?.nodes ?? []),
+      ...(studioWork?.data?.artworks2026?.nodes ?? []),
       ...(customArtworks
-        ?.filter((data) => data?.artworkFields?.studio === studio)
+
+        ?.filter((data) => data?.artworkFields?.studio?.toLowerCase() === decodedStudio)
         ?.map((data) => ({ ...data, custom: true })) ?? []),
     ],
-    [studioWork, customArtworks, studio]
+    [studioWork, customArtworks, decodedStudio]
   )
+
   useEffect(() => {
     const handleScroll = () => {
       const height = window.innerHeight * 0.01
@@ -68,9 +72,10 @@ const Studio = ({ artistList, customArtworks }) => {
   }, [scrollPosition])
 
   useEffect(() => {
-    if (studio) {
+
+    if (decodedStudio) {
       const foundStudio = studioArray.find(
-        (studioObj) => studioObj.studioSlug == studio.toLowerCase()
+        (studioObj) => studioObj.studioSlug.toLowerCase() === decodedStudio
       )
 
       if (foundStudio) {
@@ -78,14 +83,20 @@ const Studio = ({ artistList, customArtworks }) => {
         setStudioDetail(foundStudio)
         let alist = getArtistList()
         let a = getArtists()
-        if (studio == 'media') {
-          studio = 'media studio'
+        
+        let queryStudio = decodedStudio
+        if (queryStudio === 'media') {
+          queryStudio = 'media studio'
         }
-        let s = getStudioWorks(studio)
-        if (studio == 'indigenous carving & toolmaking') {
-          studio = 'indigenous carving'
+        
+        let s = getStudioWorks(queryStudio)
+        
+        if (queryStudio === 'indigenous carving & toolmaking') {
+          setStudioName('indigenous carving')
+        } else {
+          setStudioName(queryStudio)
         }
-        setStudioName(studio)
+        
         a.then((result) => {
           setArtist(result)
         })
@@ -97,7 +108,7 @@ const Studio = ({ artistList, customArtworks }) => {
         s.then((result) => {
           setStudioWork(result)
           const studioArtists = []
-          result?.data.artworks2025.nodes.map((element) => {
+          result?.data?.artworks2026?.nodes?.map((element) => {
             let add = true
             studioArtists.map((a) => {
               if (a.userId === element.author.node.userId) {
@@ -107,7 +118,7 @@ const Studio = ({ artistList, customArtworks }) => {
             if (add) {
               let studioArtist = {
                 userId: element.author?.node?.userId,
-                name: element.author?.node?.artists2025?.nodes[0]?.artistFields
+                name: element.author?.node?.artists2026?.nodes[0]?.artistFields
                   ?.artistName,
               }
               studioArtists.push(studioArtist)
@@ -117,7 +128,8 @@ const Studio = ({ artistList, customArtworks }) => {
         })
       }
     }
-  }, [studio])
+
+  }, [decodedStudio])
 
   return (
     <>
@@ -155,7 +167,7 @@ const Studio = ({ artistList, customArtworks }) => {
                   </span>
                 ))}
               </div>
-              {studio == 'public art' && (
+              {decodedStudio === 'public art' && (
                 <a href="https://thecanadaline.com/art-program/out-of-the-tunnel/">
                   Student Project: Langara 49th Station Project
                 </a>
@@ -284,9 +296,9 @@ export async function getStaticProps(context) {
 
     return {
       props: {
-        artistList: data?.artists2025?.nodes,
+        artistList: data?.artists2026?.nodes,
         customArtworks: custom?.customArtworks?.nodes?.filter(
-          (data) => data?.customArtworkYear?.year === 2025
+          (data) => data?.customArtworkYear?.year === 2026
         ),
       },
       revalidate: process.env.REVALIDATE_DATA === 'true' ? 30 : false,
@@ -309,7 +321,7 @@ export async function getStaticPaths() {
     paths: studioArray.map((studio) => {
       return {
         params: {
-          studio: studio.studioName,
+          studio: studio.studioSlug,
         },
       }
     }),
