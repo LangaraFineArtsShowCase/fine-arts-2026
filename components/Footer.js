@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className={styles.siteFooter}>
       <div className={styles.wrapper}>
         <div>
-          <h3>Fine Arts Grad Show 2025</h3>
+          <h3>Fine Arts Grad Show 2026</h3>
           <ul>
             <li>
               <Link href="/artists">Artists</Link>

@@ -20,8 +20,8 @@ export default function App({ Component, pageProps }) {
   return (
     <ApolloProvider client={client}>
       <Head>
-        <title>Fine Arts 2025</title>
-        <meta name="description" content="Fine Arts 2025" />
+        <title>Fine Arts 2026</title>
+        <meta name="description" content="Fine Arts 2026" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

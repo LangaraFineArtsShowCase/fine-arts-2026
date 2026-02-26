@@ -143,7 +143,7 @@ const ArtworkContainer = ({
                       </div>
 
                       <div>
-                        {item.author.node.artists2025.nodes.map((artist, i) => (
+                        {item.author.node.artists2026.nodes.map((artist, i) => (
                           <div
                             className={styles.artistName}
                             key={i}
@@ -187,7 +187,7 @@ const ArtworkContainer = ({
                       </div>
 
                       <div>
-                        {item.author.node.artists2025.nodes.map((artist, i) => (
+                        {item.author.node.artists2026.nodes.map((artist, i) => (
                           <div
                             className={styles.artistName}
                             key={i}

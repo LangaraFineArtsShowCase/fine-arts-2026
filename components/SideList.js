@@ -59,7 +59,7 @@ const SideList = (props) => {
                   .map((item, index) => (
                     <li key={index}>
                       <div>
-                        <Link href={`studio/${item.toLowerCase()}`}>
+                        <Link href={`/studio/${encodeURIComponent(item.toLowerCase())}`}>
                           {item.toLowerCase() ==
                           'indigenous carving & toolmaking'
                             ? 'indigenous carving'
