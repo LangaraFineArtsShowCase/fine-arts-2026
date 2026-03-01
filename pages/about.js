@@ -101,7 +101,7 @@ const About = ({ artistList }) => {
               <h2>Aurora Landin<br/>(She/They) </h2>
               <span style={{ textTransform: "none" }}>- Department Chair, Fine Arts</span>
               <Image
-                src={`${imageBasePath}/images/about/milos-campbell.jpg`}
+                src={`${imageBasePath}/images/about/Web_Square1_Aurora Letter.webp`}
                 alt="Milos Campbell "
                 width={361}
                 height={361}
@@ -206,7 +206,7 @@ const About = ({ artistList }) => {
               <h2>David N. Wright <br/>PhD (He/Him) </h2>
               <span style={{ textTransform: "none" }}>- Interim Dean, Faculty of Arts </span>
               <Image
-                src={`${imageBasePath}/images/about/darren-bernaerdt.jpg`}
+                src={`${imageBasePath}/images/about/Web_Square2_David Letter.webp`}
                 alt="darren bernaerdt"
                 width={361}
                 height={361}
@@ -313,7 +313,7 @@ const About = ({ artistList }) => {
             >
               <h2>Langara Fine Arts</h2>
               <Image
-                src={`${imageBasePath}/images/about/Thumbnail_About.jpg`}
+                src={`${imageBasePath}/images/about/WebSquare3_How to Apply .webp`}
                 alt="langara fine arts"
                 width={361}
                 height={361}

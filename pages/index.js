@@ -26,7 +26,7 @@ const Home = ({ artistList, showComingSoon }) => {
         <div className={styles.title}>
           <div className={styles.splashTextImgWrapper}>
             <img
-              src={'/images/home/Splash_Page_Text.png'}
+              src={'/images/home/2026_Splash_Text.png'}
               alt="Splash Page Text"
               aria-hidden="true"
               className={styles.splashTextImg}

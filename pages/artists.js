@@ -68,7 +68,7 @@ const Artists = ({ artistList, majorArtworks }) => {
 
       <div className={styles.heroSection}>
         <Image
-          src="/images/NewArtistsPage1.jpg"
+          src="/images/Web_ArtistPageHero.webp"
           alt="cover image"
           layout="fill"
           style={{
