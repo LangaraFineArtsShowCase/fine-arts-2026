@@ -85,7 +85,7 @@ const Footer = () => {
           <div className={styles.howToApply}>
             <div>
               <Image
-                src={`${imageBasePath}/images/footer.jpg`}
+                src={`${imageBasePath}/images/footer.webp`}
                 alt="langara fine arts"
                 width={132}
                 height={132}
