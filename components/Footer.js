@@ -24,6 +24,9 @@ const Footer = () => {
           <h3>Previous showcase</h3>
           <ul>
             <li>
+              <Link href="https://2025.langarafinagradshow.com">2025</Link>
+            </li>
+            <li>
               <Link href="https://past.langarafinagradshow.com/2024">2024</Link>
             </li>
             <li>
