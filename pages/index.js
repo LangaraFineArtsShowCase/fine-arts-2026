@@ -26,7 +26,7 @@ const Home = ({ artistList, showComingSoon }) => {
         <div className={styles.title}>
           <div className={styles.splashTextImgWrapper}>
             <img
-              src={'/images/home/2026_Splash_Text.png'}
+              src={showComingSoon ? '/images/home/2026_Splash_Text_ComingSoon.png' : '/images/home/2026_Splash_Text.png'}
               alt="Splash Page Text"
               aria-hidden="true"
               className={styles.splashTextImg}
@@ -34,9 +34,9 @@ const Home = ({ artistList, showComingSoon }) => {
           </div>
           <h1 className={styles.visuallyHidden}>Fine Arts Grad Show 2026</h1>
         </div>
-        {showComingSoon && (
+        {/* {showComingSoon && (
           <span className={styles.coming_soon}>Coming Soon!</span>
-        )}
+        )} */}
       </main>
 
       {!showComingSoon && (
@@ -51,11 +51,11 @@ const Home = ({ artistList, showComingSoon }) => {
         </div>
       )}
       <div className={styles.langaraLogoWrapper}>
-        <img
+        {/* <img
           aria-hidden="true"
           src="/images/home/Splash_Logo.png"
           id="langaraLogo"
-        />
+        /> */}
       </div>
     </>
   )

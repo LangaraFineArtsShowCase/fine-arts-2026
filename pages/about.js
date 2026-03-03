@@ -267,11 +267,11 @@ const About = ({ artistList }) => {
                 Program over the years. Thank you, team!
               </p>
               <p>
-                Splash Page Image: 
-                <br />
-                Image Layout: 
+                Reference Image for Branding: Painting by Abagail Chan
                 <br />
                 Photos by Sam Leung and Shradha Chonkar
+                <br />
+                Image Layout: Elizabeth Milton & Natalie Purschwitz
               </p>
             </div>
 
@@ -313,7 +313,7 @@ const About = ({ artistList }) => {
             >
               <h2>Langara Fine Arts</h2>
               <Image
-                src={`${imageBasePath}/images/about/WebSquare3_How to Apply .webp`}
+                src={`${imageBasePath}/images/about/Web_About Page.webp`}
                 alt="langara fine arts"
                 width={361}
                 height={361}
