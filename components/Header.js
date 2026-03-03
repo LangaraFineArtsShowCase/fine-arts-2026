@@ -92,7 +92,7 @@ const Header = ({ artistList, originPage, bgColor }) => {
             <div className={styles.headerTitle}>
               <Link
                 href="/"
-                style={{ color: originPage == 'about' ? '#181818' : '#ffffff' }}
+                style={{ color: originPage === 'about' || originPage === 'artists' ? '#181818' : '#ffffff' }}
               >
                 <span>Langara Fine Arts</span>
                 <span>Grad Show 2026</span>
