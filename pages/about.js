@@ -118,7 +118,7 @@ const About = ({ artistList }) => {
             </div>
             <div>
               <p>
-                We are so thrilled to celebrate this achievement with all of these Graduates, and to acknowledge with gratitude the enormous support of their families and friends, who have helped get them to this point. The connections made here and in the broader community, along with the new skills you have gained, will carry you through a lifetime. We wish you all the best as you continue your journey to new heights!
+                We are so thrilled to celebrate this achievement with all of you, the Graduates, and to acknowledge with gratitude the enormous support of your families and friends, who have helped get you all to this point. The connections made here and in the broader community, along with the new skills you have gained, will carry you through a lifetime of creativity. We wish you all the best as you continue your journey to new heights!
               </p>
             </div>
           </div>
@@ -140,7 +140,7 @@ const About = ({ artistList }) => {
               </li>
               <li>
                 <strong>Steve Hubert</strong>
-                <span>- sculpture, painting, media and drawing</span>
+                <span>- sculpture, painting, media, drawing</span>
               </li>
               <li>
                 <strong>Scott Kemp</strong>
@@ -168,7 +168,7 @@ const About = ({ artistList }) => {
               </li>
               <li>
                 <strong>Suzi Webster</strong>
-                <span>- media studio and drawing</span>
+                <span>- media studio, drawing</span>
               </li>
               <li>
                 <strong>Will Morrison</strong>
@@ -191,7 +191,7 @@ const About = ({ artistList }) => {
               <li>
                 <strong>Elizabeth Milton</strong>
                 <span>
-                  - Graduation Exhibition Coordinator, performance, media studio, drawing and professional practice
+                  - Graduation Exhibition Coordinator, performance, media studio, drawing, professional practice
                 </span>
               </li>
             </ul>
@@ -333,7 +333,7 @@ const About = ({ artistList }) => {
             <div>
               <p>
                 Students have the opportunity to study drawing, design,
-                painting, sculpture, foundry, printmaking, Indigenous carving,
+                painting, sculpture, printmaking, Indigenous carving,
                 ceramics, textile art, media, performance and public art. Our
                 tuition is affordable, and our courses are university
                 transferable. Langara Fine Arts alumni go on to study at
