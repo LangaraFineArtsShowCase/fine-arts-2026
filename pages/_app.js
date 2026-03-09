@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import { ApolloProvider } from '@apollo/client'
 import client from '@/apollo/client'
 import Head from 'next/head'
+import Script from 'next/script'
 import { useEffect, useState } from 'react'
 import Home from '.'
 
@@ -25,6 +26,19 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-BC4P7KDJQD"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-BC4P7KDJQD');
+        `}
+      </Script>
+      
       {showComingSoon ? (
         <Home {...pageProps} showComingSoon={showComingSoon} />
       ) : (
