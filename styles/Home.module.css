@@ -85,11 +85,13 @@
   justify-content: flex-end;
 }
 .langaraLogoWrapper img {
-  width: 100%;
+  width: auto;
   display: block;
   object-fit: contain;
   height: auto;
-  max-width: 350px;
+  max-width: 300px;
+  background-color: rgba(49, 37, 168, 0.7);
+  padding: 1rem 3rem;
 }
 .buttonWrapper {
   position: absolute;
@@ -131,9 +133,16 @@
     margin: auto;
     margin-bottom: 5vh;
   }
+
+  .langaraLogoWrapper {
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 10vh;
+  }
   .langaraLogoWrapper img {
-    margin: 0 auto;
-    min-width: 50vw;
+    margin: 0;
+    max-width: 30vw;
+    padding: 1.5rem;
   }
   .coming_soon {
     text-align: center;
@@ -152,7 +161,7 @@
 }
 @media screen and (min-width: 1200px) {
   .langaraLogoWrapper img {
-    max-width: 25vw;
+    max-width: min(25vw, 300px);
   }
   .coming_soon {
     text-align: right;
