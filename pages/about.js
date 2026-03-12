@@ -46,12 +46,12 @@ const About = ({ artistList }) => {
                 honoured to hold our given Musqueam name,{' '}
                 <strong>snəw̓eyəɬ leləm̓,</strong> house of teachings.
               </p>
-              <p>
+              {/* <p>
                 <strong>
                   Welcome to the Langara Fine Arts virtual graduation showcase
                   for 2026!
                 </strong>
-              </p>
+              </p> */}
               <p>
                 This website complements our on-campus
                 exhibition held at Langara College from April 30<sup>th</sup> — May 10<sup>th</sup>, 2026.
@@ -98,8 +98,10 @@ const About = ({ artistList }) => {
             <div
               className={`${styles.personPortrait} ${styles.textAlignRight}`}
             >
-              <h2>Aurora Landin<br/>(She/They) </h2>
-              <span style={{ textTransform: "none" }}>- Department Chair, Fine Arts</span>
+              <h2>Congratulations</h2>
+              <span style={{ textTransform: "none"}}>From: Aurora Landin (she/they)</span>
+              <span style={{fontSize:"16px", textTransform: "none"}}>Department Chair, Department of Fine Arts</span>
+              
               <Image
                 src={`${imageBasePath}/images/about/Web_Square1_Aurora Letter.webp`}
                 alt="Milos Campbell "
@@ -203,8 +205,9 @@ const About = ({ artistList }) => {
         >
           <div className={styles.wrapper}>
             <div className={styles.personPortrait}>
-              <h2>David N. Wright <br/>PhD (He/Him) </h2>
-              <span style={{ textTransform: "none" }}>- Interim Dean, Faculty of Arts </span>
+              <h2>Congratulations</h2>
+              <span style={{ textTransform: "none"}}>From: David Wright (he/him) </span>
+              <span style={{fontSize:"16px", textTransform: "none"}}>Interim Dean, Faculty of Arts</span>
               <Image
                 src={`${imageBasePath}/images/about/Web_Square2_David Letter.webp`}
                 alt="darren bernaerdt"
@@ -267,7 +270,7 @@ const About = ({ artistList }) => {
                 Program over the years. Thank you, team!
               </p>
               <p>
-                Reference Image for Branding: Painting by Abagail Chan
+                Reference Image for Branding: Abagail Chan
                 <br />
                 Photos by Sam Leung and Shradha Chonkar
                 <br />

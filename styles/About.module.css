@@ -94,16 +94,17 @@
   display: block;
   padding: 0 12px;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 27px;
   text-transform: lowercase;
   z-index: 1;
 }
 
 .personPortrait img {
-  margin-top: -48px;
+  margin-top: -75px;
   max-width: 100%;
   height: auto;
+  filter: brightness(80%);
 }
 
 .letterSignature {
@@ -234,6 +235,7 @@
     padding: 40px;
     width: 100%;
     max-width: 1200px;
+    font-size: 18px;
   }
 
   .section .pageTitle {

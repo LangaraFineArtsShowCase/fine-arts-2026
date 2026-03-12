@@ -51,11 +51,11 @@ const Home = ({ artistList, showComingSoon }) => {
         </div>
       )}
       <div className={styles.langaraLogoWrapper}>
-        {/* <img
+        <img
           aria-hidden="true"
           src="/images/home/Splash_Logo.png"
           id="langaraLogo"
-        /> */}
+        />
       </div>
     </>
   )
