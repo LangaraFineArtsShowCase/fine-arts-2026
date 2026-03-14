@@ -98,12 +98,12 @@ const About = ({ artistList }) => {
             <div
               className={`${styles.personPortrait} ${styles.textAlignRight}`}
             >
-              <h2>Congratulations</h2>
+              {/* <h2>Congratulations</h2>
               <span style={{ textTransform: "none"}}>From: Aurora Landin (she/they)</span>
-              <span style={{fontSize:"16px", textTransform: "none"}}>Department Chair, Department of Fine Arts</span>
+              <span style={{fontSize:"16px", textTransform: "none"}}>Department Chair, Department of Fine Arts</span> */}
               
               <Image
-                src={`${imageBasePath}/images/about/Web_Square1_Aurora Letter.webp`}
+                src={`${imageBasePath}/images/about/Web_Square1_Aurora_Text.webp`}
                 alt="Milos Campbell "
                 width={361}
                 height={361}
@@ -205,11 +205,11 @@ const About = ({ artistList }) => {
         >
           <div className={styles.wrapper}>
             <div className={styles.personPortrait}>
-              <h2>Congratulations</h2>
+              {/* <h2>Congratulations</h2>
               <span style={{ textTransform: "none"}}>From: David Wright (he/him) </span>
-              <span style={{fontSize:"16px", textTransform: "none"}}>Interim Dean, Faculty of Arts</span>
+              <span style={{fontSize:"16px", textTransform: "none"}}>Interim Dean, Faculty of Arts</span> */}
               <Image
-                src={`${imageBasePath}/images/about/Web_Square2_David Letter.webp`}
+                src={`${imageBasePath}/images/about/Web_Square1_David Letter text.webp`}
                 alt="darren bernaerdt"
                 width={361}
                 height={361}
@@ -270,7 +270,7 @@ const About = ({ artistList }) => {
                 Program over the years. Thank you, team!
               </p>
               <p>
-                Reference Image for Branding: Abagail Chan
+                Reference Image for Branding: Abigail Chan
                 <br />
                 Photos by Sam Leung and Shradha Chonkar
                 <br />

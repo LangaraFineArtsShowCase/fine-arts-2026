@@ -101,10 +101,10 @@
 }
 
 .personPortrait img {
-  margin-top: -75px;
+  margin-top: 25px;
   max-width: 100%;
   height: auto;
-  filter: brightness(80%);
+  /* filter: brightness(80%); */
 }
 
 .letterSignature {
@@ -235,7 +235,8 @@
     padding: 40px;
     width: 100%;
     max-width: 1200px;
-    font-size: 18px;
+    font-size: 17px;
+    box-sizing: border-box;
   }
 
   .section .pageTitle {
