@@ -200,85 +200,85 @@ export const studioArray = [
 
 export const aboutImages = [
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_1.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/01About-Page_Collage-Drawing.jpg`,
     altText: 'Alt text for image 1',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_2.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/02About-Page_Collage-Ceramics.jpg`,
     altText: 'Alt text for image 2',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_3.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/03About-Page_Collage-Painting.jpg`,
     altText: 'Alt text for image 3',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_4.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/04About Page_Collage-Performance.jpg`,
     altText: 'Alt text for image 4',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_5.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/05About-Page_Collage-Sculpture1.jpg`,
     altText: 'Alt text for image 5',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_6.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/06About-Page_Collage-Printmaking.jpg`,
     altText: 'Alt text for image 6',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_7.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/07About-Page_Collage-textiles.jpg`,
     altText: 'Alt text for image 7',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_8.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/08About Page_Collage-Media.jpg`,
     altText: 'Alt text for image 8',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_9.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/09About-Page_Collage-Public-Art-.jpg`,
     altText: 'Alt text for image 9',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_10.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/10About-Page_Collage-Sculpture.jpg`,
     altText: 'Alt text for image 10',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_11.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/11About Page_Carving copy.jpg`,
     altText: 'Alt text for image 11',
   },
   {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_12.jpg`,
+    thumbnailPath: `${imageBasePath}/images/about/slides/12About Page_Design.jpg`,
     altText: 'Alt text for image 12',
   },
-  {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_13.jpg`,
-    altText: 'Alt text for image 13',
-  },
-  {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_14.jpg`,
-    altText: 'Alt text for image 14',
-  },
-  {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_15.jpg`,
-    altText: 'Alt text for image 15',
-  },
-  {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_16.jpg`,
-    altText: 'Alt text for image 16',
-  },
-  {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_17.jpg`,
-    altText: 'Alt text for image 17',
-  },
-  {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_18.jpg`,
-    altText: 'Alt text for image 18',
-  },
-  {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_19.jpg`,
-    altText: 'Alt text for image 19',
-  },
-  {
-    thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_20.jpg`,
-    altText: 'Alt text for image 20',
-  },
+  // {
+  //   thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_13.jpg`,
+  //   altText: 'Alt text for image 13',
+  // },
+  // {
+  //   thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_14.jpg`,
+  //   altText: 'Alt text for image 14',
+  // },
+  // {
+  //   thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_15.jpg`,
+  //   altText: 'Alt text for image 15',
+  // },
+  // {
+  //   thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_16.jpg`,
+  //   altText: 'Alt text for image 16',
+  // },
+  // {
+  //   thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_17.jpg`,
+  //   altText: 'Alt text for image 17',
+  // },
+  // {
+  //   thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_18.jpg`,
+  //   altText: 'Alt text for image 18',
+  // },
+  // {
+  //   thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_19.jpg`,
+  //   altText: 'Alt text for image 19',
+  // },
+  // {
+  //   thumbnailPath: `${imageBasePath}/images/about/slides/AboutPage_Collage_20.jpg`,
+  //   altText: 'Alt text for image 20',
+  // },
 ]
 //TODO: Pending alternative text
 

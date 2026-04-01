@@ -67,6 +67,8 @@
 .carouselItemWrapper {
   position: relative;
   padding-top: 75%;
+  margin-left: .6vw;
+  margin-right: .6vw;
 }
 
 .carousel img {
@@ -277,6 +279,11 @@
 
   .carousel {
     margin-bottom: 120px;
+  }
+
+  .carouselItemWrapper {
+    margin-left: .16vw;
+    margin-right: .16vw;
   }
 
   .facultyList {
