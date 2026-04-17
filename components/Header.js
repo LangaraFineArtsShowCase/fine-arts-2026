@@ -60,12 +60,12 @@ const Header = ({ artistList, originPage, bgColor }) => {
     })
 
     stutends = stutends.map((artist) => {
-      if (artist.artistFields.artistName[0] == prev) {
+      if (artist.artistFields?.artistName?.[0] == prev) {
         artist.artistFields.isNewInitial = false
         return artist
       } else {
         artist.artistFields.isNewInitial = true
-        prev = artist.artistFields.artistName[0]
+        prev = artist.artistFields?.artistName?.[0]
         return artist
       }
     })
@@ -169,7 +169,7 @@ const Header = ({ artistList, originPage, bgColor }) => {
                 <div key={i} className={styles.artistName}>
                   {artist.artistFields.isNewInitial ? (
                     <p className={styles.initial}>
-                      {artist.artistFields.artistName[0]}
+                      {artist.artistFields?.artistName?.[0]}
                     </p>
                   ) : (
                     <p className={styles.initial}></p>
