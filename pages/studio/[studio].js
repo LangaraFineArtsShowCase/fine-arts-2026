@@ -21,7 +21,7 @@ const Studio = ({ artistList, customArtworks }) => {
   const [studioName, setStudioName] = useState('')
   const [artistsNames, setArtistsNames] = useState({})
 
-  const [studioWork, setStudioWork] = useState({})
+  const [studioWork, setStudioWork] = useState(null)
 
   const [display, setDisplay] = useState(false)
   const [studioDetail, setStudioDetail] = useState({})
@@ -229,7 +229,7 @@ const Studio = ({ artistList, customArtworks }) => {
               />
             </div>
           )}
-          {items.length == 0 && !studioDetail.fallbackImages && (
+          {studioWork !== null && items.length == 0 && !studioDetail.fallbackImages && (
             <div className={styles.noArt}>No art work to show.</div>
           )}
         </>
