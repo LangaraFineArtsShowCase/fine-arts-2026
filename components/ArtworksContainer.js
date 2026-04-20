@@ -22,14 +22,14 @@ const ArtworkContainer = ({
   const shuffle = (artworks, additionals) => {
     if (artworks) {
       let studentArtworks = artworks
-      /*
+      
       for (let i = studentArtworks.length - 1; i >= 0; i--) {
         const j = Math.floor(Math.random() * (i + 1))
         ;[studentArtworks[i], studentArtworks[j]] = [
           studentArtworks[j],
           studentArtworks[i],
         ]
-      }*/
+      }
       setShuffledItems(studentArtworks)
     }
 
