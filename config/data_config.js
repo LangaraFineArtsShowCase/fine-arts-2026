@@ -153,15 +153,19 @@ export const studioArray = [
       'In our Public Art classes students engage in the three major stages involved in the production of public art: concept development, detailed design and fabrication and installation. Students create individual site-specific projects and together produce two large scale works that are installed for the duration of a year at the Langara-49th Canada Line station, part of the Canada Line Public Art Program. Projects include 2d design, file preparation for laser cutting, elements of pattern making, green sand casting in bronze, metal chasing and finishing. As a collective, students prepare 2d files for large scale file output, work with a local print house and collaborate on one large scale sculptural work from concept to installation.',
     studioFaculty: ['Pat Vera', 'Workshop Coordinator: Will Morrison'],
     studioImage: [
-      `${imageBasePath}/images/studios/PublicArt1-min.jpg`,
-      `${imageBasePath}/images/studios/PublicArt1.jpg`,
+      `${imageBasePath}/images/studios/PublicArt1-min.webp`,
+      `${imageBasePath}/images/studios/PublicArt1.webp`,
     ],
-    // fallbackImages: [
-    //   `${imageBasePath}/images/studios/fallbacks/public_art/01PublicArt.jpg`,
-    //   `${imageBasePath}/images/studios/fallbacks/public_art/02PublicArt.jpg`,
-    //   `${imageBasePath}/images/studios/fallbacks/public_art/03PublicArt.jpg`,
-    //   `${imageBasePath}/images/studios/fallbacks/public_art/04PublicArt.jpg`,
-    // ],
+    fallbackImages: [
+      `${imageBasePath}/images/studios/fallbacks/public_art/01PublicArt.webp`,
+      `${imageBasePath}/images/studios/fallbacks/public_art/02PublicArt.webp`,
+      `${imageBasePath}/images/studios/fallbacks/public_art/03PublicArt.webp`,
+      `${imageBasePath}/images/studios/fallbacks/public_art/04PublicArt.webp`,
+      `${imageBasePath}/images/studios/fallbacks/public_art/05PublicArt.webp`,
+      `${imageBasePath}/images/studios/fallbacks/public_art/06PublicArt.webp`,
+      `${imageBasePath}/images/studios/fallbacks/public_art/07PublicArt.webp`,
+      `${imageBasePath}/images/studios/fallbacks/public_art/08PublicArt.webp`,
+    ],
   },
   {
     studioID: 10,
