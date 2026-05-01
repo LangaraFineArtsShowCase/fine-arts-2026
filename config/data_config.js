@@ -288,52 +288,52 @@ export const aboutImages = [
 
 export const awardWinners = [
   {
-    winnerArtistID: 2330,
+    winnerArtistID: 233,
     winnerArtistName: 'Hitomi Mia Fukui',
     awardName: 'Sculptural Ceramics Award',
   },
   {
-    winnerArtistID: 2250,
+    winnerArtistID: 225,
     winnerArtistName: 'Jaidyn Chorney',
     awardName: 'Functional Ceramics Award',
   },
   {
-    winnerArtistID: 2300,
+    winnerArtistID: 230,
     winnerArtistName: 'Cian Donoghue-Brooke',
     awardName: 'Printmaking Award',
   },
   {
-    winnerArtistID: 2360,
+    winnerArtistID: 236,
     winnerArtistName: 'Mackayla Gilmour',
     awardName: 'Sculpture Award',
   },
   {
-    winnerArtistID: 2380,
+    winnerArtistID: 238,
     winnerArtistName: 'Samuel Hui',
     awardName: 'Drawing Award',
   },
   {
-    winnerArtistID: 2180,
+    winnerArtistID: 218,
     winnerArtistName: 'Laura Akiyama',
     awardName: 'Painting Award',
   },
   {
-    winnerArtistID: 2530,
+    winnerArtistID: 253,
     winnerArtistName: 'Charlie Yandel',
     awardName: 'Design Award',
   },
   {
-    winnerArtistID: 130,
+    winnerArtistID: 13,
     winnerArtistName: 'Tony Emslander',
     awardName: 'Media Studio Award',
   },
   {
-    winnerArtistID: 2410,
+    winnerArtistID: 241,
     winnerArtistName: 'Ariel Lajeunesse',
     awardName: 'Fine Arts Program Award',
   },
   {
-    winnerArtistID: 2370,
+    winnerArtistID: 237,
     winnerArtistName: 'Zahra Goushehgir',
     awardName: 'Bob Graham and Laura Cullen Fine Arts Scholarship',
   },
